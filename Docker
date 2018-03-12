@@ -1,0 +1,4 @@
+FROM openjdk:8
+EXPOSE 8080
+ADD target/snmpwithjsp.war snmpwithjsp.war
+ENTRYPOINT ["java","-jar","snmpwithjsp.war"]
